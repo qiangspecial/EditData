@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>点击文本编辑</title>
+</head>
+<style>
+*{margin:0;padding:0;}
+ul {
+	margin-top: 100px;
+	list-style: none;
+	font-size: 14px;
+}
+li {
+	height: 50px;
+	margin-left: 200px;
+}
+span {
+	line-height: 24px;
+}
+</style>
+<link rel="stylesheet" href="./editData.css">
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="./editData.js"></script>
+<body>
+<ul>
+	<li><span>编辑：</span><span class="click-edit" data-name="fundAccounting.redeemAmt" data-url="/biz/fund_saveFundAccounting.action">123456</span></li>
+	<li><span>编辑：</span><span class="click-edit" data-name="fundAccounting.redeemAmt" data-url="/biz/fund_saveFundAccounting.action">123456</span></li>
+	<li><span>编辑：</span><span class="click-edit" data-name="fundAccounting.redeemAmt" data-url="/biz/fund_saveFundAccounting.action">123456</span></li>
+	<li><span>编辑：</span><span class="click-edit" data-name="fundAccounting.redeemAmt" data-url="/biz/fund_saveFundAccounting.action">123456</span></li>
+	<li><span>编辑：</span><span class="click-edit" data-name="fundAccounting.redeemAmt" data-url="/biz/fund_saveFundAccounting.action">123456</span></li>
+</ul>
+<!-- <div class="edit-input"><input type="text" value=""><a href="javascript:void(0)" class="edit-confirm"></a><a href="javascript:void(0)" class="edit-cancel"></a></div> -->
+<script>
+$(".click-edit").editData({	
+  //"url": "/biz/fund_saveFundAccounting.action",
+  "data": {
+    "fundAccounting.id": ""
+  }, 
+  "done": done
+});
+
+function done(data) {
+	console.log(data);
+}
+</script>
+</body>
+</html>
