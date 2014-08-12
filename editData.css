@@ -1,0 +1,39 @@
+.click-edit, .edit-confirm, .edit-cancel {
+  background: url(./edit_data.png) no-repeat;
+}
+.click-edit {
+  display: inline-block;
+  width: 100px;
+  background-position: 100% -76px;
+}
+.click-edit:hover {
+  background-position: 100% -78px;
+}
+.edit-input {
+  position: absolute;
+  height: 22px;
+  padding: 0 1px 0 5px;
+  border: 1px solid #ccc;
+  background: #fff;
+  line-height: 22px;
+}
+.edit-input input {
+  float: left;
+  width: 80px;
+  height: 22px;
+  border: none;
+  background: none;
+  outline: none;
+}
+.edit-confirm, .edit-cancel {
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-top: 1px;
+}
+.edit-confirm {
+  margin-right: 1px;
+}
+.edit-cancel {
+  background-position: 0 -40px;
+}
